@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MUST | Create Account</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <img src="must-logo.jpeg" alt="Mbarara University of Science and Technology logo" class="must-logo">
+    <div>
+      <h1>MBARARA UNIVERSITY OF SCIENCE AND TECHNOLOGY</h1>
+      <p class="subtitle">Online Application Portal</p>
+    </div>
+  </header>
+  <main>
+    <section class="card">
+      <h2>Create Account</h2>
+      <p class="description">Enter your details to create an account on the MUST application portal.</p>
+      <form action="#" method="post" onsubmit="if(document.getElementById('password').value !== document.getElementById('confirm-password').value){alert('Passwords do not match.'); return false;}">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" autocomplete="name" required>
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" autocomplete="email" required>
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" autocomplete="tel" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Create a password" autocomplete="new-password" minlength="8" required>
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Enter your password again" autocomplete="new-password" minlength="8" required>
+        <button type="submit" class="primary-button">Create Account</button>
+      </form>
+      <p class="signup-link">Already have an account? <a href="login.html">Sign In</a></p>
+      <nav class="portal-buttons" aria-label="Portal navigation">
+        <a href="how_to_apply.html" class="secondary-button">How to Apply</a>
+        <a href="login.html" class="secondary-button">Back to Sign In</a>
+      </nav>
+    </section>
+  </main>
+  <footer><p>&copy; 2026 Mbarara University of Science and Technology.</p></footer>
+</body>
+</html>
